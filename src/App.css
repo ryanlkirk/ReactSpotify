@@ -1,38 +1,140 @@
+html,
+body,
+.App,
+#root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .App {
-  text-align: center;
+  background: rgb(53, 53, 53);
+  background: linear-gradient(180deg, rgb(37, 37, 37) 0%, rgb(32, 32, 32) 15%, rgba(18, 18, 18, 1) 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.previewBanner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 11px 24px 15px 15px;
+  background: rgb(175, 40, 150);
+  background: linear-gradient(90deg, rgba(175, 40, 150, 1) 0%, rgba(80, 155, 245, 1) 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.previewBanner p {
+  margin: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footerTopText {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+}
+
+.btnPill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 0px 30px;
+  background-color: white;
+  color: #5e5e5e;
+  font-weight: 700;
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.leftNav {
+  width: 235px;
+  height: 100%;
+  background: black;
+}
+
+.topNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #111111;
+  height: 34px;
+  padding: 16px 32px;
+  flex: 1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mainContent {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+}
+
+.signUp {
+  font-weight: 700;
+  color: #b3b3b3;
+  margin-right: 25px;
+}
+
+.topNavSection {
+  display: flex;
+  align-items: center;
+}
+
+.drkBtn {
+  color: #1d1d1d;
+}
+
+.focusSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.albumCard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 15px;
+  height: 272px;
+  width: 150px;
+  background: #161616;
+  border-radius: 5px;
+}
+
+.albumCard p {
+  align-self: start;
+  padding-left: 5px;
   color: white;
+  font-weight: 700;
+  margin-bottom: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.albumCard .info{
+  align-self: start;
+  padding-left: 5px;
+  color: white;
+  font-weight: 100;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.albumCard {
+  transition: 0.2s;
+}
+
+.albumCard:hover {
+  background: #292929;
+}
+
+.album {
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 10px;
+  background-image: url("../src/images/piano.jpg");
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
