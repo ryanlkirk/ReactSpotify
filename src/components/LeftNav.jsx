@@ -5,7 +5,7 @@ import logo from '../images/spotify.png'
 const LeftNav = () => {
     // const [activeLink, setActiveLink] = useState("home");
 
-    return <navbar className="leftNav">
+    return <nav className="leftNav">
         <section>
             <img className='left-nav-logo'
                 src={logo}
@@ -68,7 +68,7 @@ const LeftNav = () => {
         </section>
 
 
-    </navbar>
+    </nav>
 }
 
 export default LeftNav;
