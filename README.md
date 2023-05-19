@@ -1,6 +1,6 @@
 # Spotify Clone
 
-![Spotify Clone Screenshot](./images/Screenshot.png)
+![Spotify Clone Screenshot](./src/images/Screenshot.png)
 
 This project is a work-in-progress Spotify clone, built using React. The goal of this project is to showcase my skills as a developer and create a replica of the popular music streaming platform, Spotify, with as close to 1:1 functionality as possible.
 
