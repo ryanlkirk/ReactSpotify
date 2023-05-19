@@ -55,9 +55,11 @@ body,
 
 .leftNav {
   width: 235px;
-  height: 100%;
   background: black;
   padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .leftNav ul {
@@ -187,4 +189,27 @@ main {
   background-image: url("../src/images/piano.jpg");
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cookies {
+  font-size: 0.7rem;
+  color: #b3b3b3;
+  padding: 32px;
+}
+
+.language-btn {
+  display: flex;
+  align-items: center;
+  color: white;
+  background: none;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 7px 10px;
+  margin-bottom: 32px;
+  margin-left: 32px;
+  font-weight: 600;
+}
+
+.language-btn img {
+  padding-right: 5px;
 }
