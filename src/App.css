@@ -44,12 +44,55 @@ body,
   font-weight: 700;
   border-radius: 50px;
   flex-shrink: 0;
+  transition: 0.3s;
 }
+
+.btnPill:hover {
+  cursor: pointer;
+  color: #111111;
+}
+
 
 .leftNav {
   width: 235px;
   height: 100%;
   background: black;
+  padding-top: 24px;
+}
+
+.leftNav ul {
+  padding: 0px 24px;
+  margin: 0px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: .9rem;
+  margin-bottom: 20px;
+  transition: .3s;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.inactive-nav-item {
+  color: #afafaf;
+}
+
+.nav-item-icon {
+  padding-right: 18px;
+}
+
+
+.left-nav-logo {
+  padding: 0px 24px;
+  width: 65%;
+  margin-bottom: 36px;
 }
 
 .topNav {
@@ -78,7 +121,14 @@ main {
   font-weight: 700;
   color: #b3b3b3;
   margin-right: 25px;
+  transition: .3s;
 }
+
+.signUp:hover {
+  cursor: pointer;
+  color: white;
+}
+
 
 .topNavSection {
   display: flex;
@@ -114,7 +164,7 @@ main {
   margin-bottom: 0px;
 }
 
-.albumCard .info{
+.albumCard .info {
   align-self: start;
   padding-left: 5px;
   color: white;
@@ -122,7 +172,7 @@ main {
 }
 
 .albumCard {
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .albumCard:hover {
