@@ -2,7 +2,7 @@
 import logo from '../images/spotify.png'
 
 
-const LeftNav = () => {
+const LeftNav = (props) => {
     // const [activeLink, setActiveLink] = useState("home");
 
     return <nav className="leftNav">
@@ -55,8 +55,9 @@ const LeftNav = () => {
 
         </section>
         <section>
-            <div className='cookies'>Cookies</div>
-            <button className='language-btn'>
+        
+            <div className='cookies'><a draggable="false" href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener" class="iAjWsvBt2sbhwc6DwEaW"><span>Cookies</span></a></div>
+            <button className='language-btn' onClick={() => props.setLanguageWindowOpen(true)}>
                 <img
                     draggable="false"
                     src={require('../images/ui-elements/language.svg').default}
@@ -64,7 +65,8 @@ const LeftNav = () => {
                     width="16px"
                     height="16px"
                 />
-                English</button>
+                English
+            </button>
         </section>
 
 

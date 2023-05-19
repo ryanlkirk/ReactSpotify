@@ -4,24 +4,34 @@ import TopNav from './TopNav';
 import InnerContent from './InnerContent';
 import { LanguageContext } from '../languageContext';
 import { useContext } from 'react';
+import LanguagePopover from './LanguagePopover';
+import { useState } from 'react';
+
 
 const Main = () => {
-    const { language, changeLanguage } = useContext(LanguageContext);
-    console.warn(language)
+    const [languageWindowOpen, setLanguageWindowOpen] = useState(false)
+    // const { language, changeLanguage } = useContext(LanguageContext); 
 
     return (
-        <main>
-            <div className='mainContent'>
-            <LeftNav />
-            <div style={{width: "100%"}}>
-            <TopNav />
-            <InnerContent />
-            </div>
+        <>
+            {
+                languageWindowOpen && <LanguagePopover setLanguageWindowOpen={setLanguageWindowOpen} />
+            }
 
-            </div>
-           
-            <SpotifyPreviewBanner />
-        </main>
+            <main>
+                <div className='mainContent'>
+                    <LeftNav setLanguageWindowOpen={setLanguageWindowOpen} />
+                    <div style={{ width: "100%" }}>
+                        <TopNav />
+                        <InnerContent />
+                    </div>
+
+                </div>
+
+                <SpotifyPreviewBanner />
+            </main>
+        </>
+
     )
 }
 
