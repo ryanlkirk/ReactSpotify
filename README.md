@@ -21,6 +21,12 @@ The aim of this Spotify clone is to replicate the core features of the original 
 
 As this project is a work in progress, not all features might be fully implemented or functional at the moment. However, I am actively working on developing and enhancing the clone to ensure it provides a similar experience to the original Spotify platform.
 
+## App Functionality 
+- Language selection from English or French - Managed by Redux
+- Searching [In progress]
+- Favourites [In progress]
+- Unit testing [In Progress] - Written using Jest
+
 ## Installation
 
 To run this project locally, follow these steps:
@@ -34,9 +40,10 @@ To run this project locally, follow these steps:
 
 Once the development server is up and running, open your web browser and navigate to `http://localhost:3000` to access the Spotify clone. From there, you can explore the available features and functionalities.
 
-## Technologies Used
+## Technologies
 
 - React
+- Redux
 - JavaScript
 - HTML
 - CSS
