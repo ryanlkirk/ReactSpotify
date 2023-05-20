@@ -21,10 +21,10 @@ const Main = () => {
             <main>
                 <div className='mainContent'>
                     <LeftNav setLanguageWindowOpen={setLanguageWindowOpen} />
-                    <div style={{ width: "100%" }}>
+                    <container className="mainBodyContent">
                         <TopNav />
                         <InnerContent />
-                    </div>
+                    </container>
 
                 </div>
                 <SpotifyPreviewBanner />

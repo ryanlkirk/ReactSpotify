@@ -5,8 +5,7 @@ body,
   height: 100%;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  overflow: hidden;
+  margin: 0;  
 }
 
 a {
@@ -112,7 +111,6 @@ a {
   background: #111111;
   height: 30px;
   padding: 16px 32px;
-  flex: 1;
 }
 
 main {
@@ -123,7 +121,8 @@ main {
 
 .mainContent {
   display: flex;
-  height: 100%;
+  /* FIX: This isn't the right way to handle this */
+  height: calc(100% - 75px); 
   flex-direction: row;
 }
 
@@ -152,6 +151,7 @@ main {
 .focusSection {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .albumCard {
@@ -242,8 +242,12 @@ main {
 }
 
 .innerContent {
+  display: flex;
   padding: 10px 32px;
   box-sizing: border-box;
+  height: 100%;
+  flex-direction: column;
+  overflow-y: auto;
 }
 
 .albumSectionHeader {
@@ -251,4 +255,10 @@ main {
   color: white;
   font-weight: 600;
   font-size: 1.4rem;
+}
+
+.mainBodyContent {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
