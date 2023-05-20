@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from 'react-redux'
 import { changeLangauge } from "../features/languageSlice";
+import GetLangText from '../app/helpers/language';
 
 const LanguagePopover = (props) => {
     const lang = useSelector((state) => state.language)
@@ -34,14 +35,14 @@ const LanguagePopover = (props) => {
         <div className="languagePopover">
             <section className="languagePicker">
                 <div className="languagePickerHeader">
-                    <h1>Choose a language</h1>
-                    <p>This updates what you read on open.spotify.com</p>
-                    <span onClick={() => props.setLanguageWindowOpen(false)}>close</span>
+                    <h1>{GetLangText("SelectLanguage")}</h1>
+                    <p>{GetLangText("SpotifyLangView")}</p>
+                    <span onClick={() => props.setLanguageWindowOpen(false)}>{GetLangText("Close")}</span>
                 </div>
 
                 <div className="languageOptions">
-                    <div onClick={() => swapLangAndClose("en")}><p>English</p><p className="nativeLang">English</p></div>
-                    <div onClick={() => swapLangAndClose("fr")}><p>French</p><p className="nativeLang">Français</p></div>
+                    <div onClick={() => swapLangAndClose("en")}><p>{GetLangText("English")}</p><p className="nativeLang">{GetLangText("EnglishLocal")}</p></div>
+                    <div onClick={() => swapLangAndClose("fr")}><p>{GetLangText("French")}</p><p className="nativeLang">{GetLangText("FrenchLocal")}</p></div>
                 </div>
 
 
