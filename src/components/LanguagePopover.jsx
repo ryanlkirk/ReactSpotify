@@ -24,13 +24,18 @@ const LanguagePopover = (props) => {
         };
     }, []);
 
+    const swapLangAndClose = (lang) => {
+        dispatch(changeLangauge(lang))
+        props.setLanguageWindowOpen(false)
+    }
+
 
     return (
         <div className="languagePopover">
             <section className="languagePicker">
                 <span onClick={() => props.setLanguageWindowOpen(false)}>close</span>
-                <span onClick={() => dispatch(changeLangauge("en"))}>English</span>
-                <span onClick={() => dispatch(changeLangauge("fr"))}>French</span>
+                <span onClick={() => swapLangAndClose("en")}>English</span>
+                <span onClick={() => swapLangAndClose("fr")}>French</span>
             </section>
         </div>
     )

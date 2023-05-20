@@ -1,13 +1,14 @@
 import Button from './Button'
+import GetLangText from '../app/helpers/language';
 
 const SpotifyPreviewBanner = () => {
     return (
         <footer className="previewBanner">
             <div>
-                <p className="footerTopText">Preview of Spotify</p>
-                <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+                <p className="footerTopText">{GetLangText("PreviewSpotify")}</p>
+                <p>{GetLangText("BottomFooterText")}</p>
             </div>
-            <Button btnType="pill" text="Sign Up Free"></Button>
+            <Button btnType="pill" text={GetLangText("SignUpFree")}></Button>
         </footer>
     )
 

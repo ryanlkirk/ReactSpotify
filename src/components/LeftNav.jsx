@@ -1,10 +1,8 @@
 // import { useState } from 'react'
 import GetLangText from '../app/helpers/language';
 import logo from '../images/spotify.png'
-import { useSelector } from 'react-redux';
 
 const LeftNav = (props) => {
-    const lang = useSelector((state) => state.language)
     // const [activeLink, setActiveLink] = useState("home");
 
     return <nav className="leftNav">
@@ -24,7 +22,7 @@ const LeftNav = (props) => {
                             width="22px"
                             height="22"
                         />
-                        Home
+                        {GetLangText("Home")}
                     </div>
                 </li>
                 <li>
@@ -37,7 +35,7 @@ const LeftNav = (props) => {
                             width="22px"
                             height="22"
                         />
-                        Search
+                        {GetLangText("Search")}
                     </div>
                 </li>
                 <li>
@@ -50,7 +48,7 @@ const LeftNav = (props) => {
                             width="22px"
                             height="22"
                         />
-                        Your Library
+                        {GetLangText("YourLibrary")}
                     </div>
                 </li>
             </ul>
@@ -67,7 +65,7 @@ const LeftNav = (props) => {
                     width="16px"
                     height="16px"
                 />
-                {GetLangText(lang)}
+                {GetLangText("Language")}
             </button>
         </section>
 

@@ -1,4 +1,5 @@
 import Button from "./Button";
+import GetLangText from '../app/helpers/language';
 
 const TopNav = () => {
     return <div className="topNav">
@@ -7,8 +8,8 @@ const TopNav = () => {
             <div>R</div>
         </div>
         <div className="topNavSection">
-            <span className="signUp">Sign Up</span>
-            <Button text="Log in" btnType="pill" textType="drk" />
+            <span className="signUp">{GetLangText("SignUp")}</span>
+            <Button text={GetLangText("LogIn")} btnType="pill" textType="drk" />
         </div>
     </div>
 }
