@@ -1,8 +1,10 @@
 // import { useState } from 'react'
+import GetLangText from '../app/helpers/language';
 import logo from '../images/spotify.png'
-
+import { useSelector } from 'react-redux';
 
 const LeftNav = (props) => {
+    const lang = useSelector((state) => state.language)
     // const [activeLink, setActiveLink] = useState("home");
 
     return <nav className="leftNav">
@@ -65,7 +67,7 @@ const LeftNav = (props) => {
                     width="16px"
                     height="16px"
                 />
-                English
+                {GetLangText(lang)}
             </button>
         </section>
 

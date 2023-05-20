@@ -4,9 +4,9 @@ import { useSelector } from 'react-redux'
 const GetLangText = () => {
     const lang = useSelector((state) => state.language)
     if(lang.value === "fr") {
-       return  "French Text"
+       return  "French"
     } else {
-        return "English Text"
+        return "English"
     }
 }
 
