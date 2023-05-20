@@ -5,7 +5,7 @@ body,
   height: 100%;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
-  margin: 0;  
+  margin: 0;
 }
 
 a {
@@ -122,7 +122,7 @@ main {
 .mainContent {
   display: flex;
   /* FIX: This isn't the right way to handle this */
-  height: calc(100% - 75px); 
+  height: calc(100% - 75px);
   flex-direction: row;
 }
 
@@ -163,7 +163,7 @@ main {
   width: 150px;
   background: #161616;
   border-radius: 5px;
-  margin:0px 5px;
+  margin: 0px 5px;
 }
 
 .albumCard p {
@@ -225,7 +225,7 @@ main {
 .languagePopover {
   height: 100%;
   width: 100%;
-  background: rgba(54, 54, 54,0.5);
+  background: rgba(0, 0, 0, 0.7);
   position: absolute;
   display: flex;
   align-items: center;
@@ -235,10 +235,45 @@ main {
 
 .languagePicker {
   width: 30%;
-  height: 20%;
+  height: 25%;
   min-width: 300px;
-  background-color: #111111;
+  background-color: #282828;
   border-radius: 10px;
+}
+
+.languagePickerHeader {
+  padding: 5px 15px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+}
+
+.languagePicker div {
+  font-size: 0.9rem;
+}
+
+.languageOptions {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.languageOptions div {
+  font-size: 0.9rem;
+  width: 120px;
+  height: 60px;
+  padding: 10px;
+}
+
+.languageOptions div:hover {
+  background: #5e5e5e;
+}
+
+.languageOptions div p {
+  margin: 0px;
+}
+
+.nativeLang {
+  padding-top: 5px;
+  color: #afafaf;
 }
 
 .innerContent {

@@ -5,7 +5,7 @@ import { changeLangauge } from "../features/languageSlice";
 const LanguagePopover = (props) => {
     const lang = useSelector((state) => state.language)
     const dispatch = useDispatch();
-    
+
     //keypress handler for closing language picker
     useEffect(() => {
         const handleEscKeyPress = (event) => {
@@ -33,9 +33,18 @@ const LanguagePopover = (props) => {
     return (
         <div className="languagePopover">
             <section className="languagePicker">
-                <span onClick={() => props.setLanguageWindowOpen(false)}>close</span>
-                <span onClick={() => swapLangAndClose("en")}>English</span>
-                <span onClick={() => swapLangAndClose("fr")}>French</span>
+                <div className="languagePickerHeader">
+                    <h1>Choose a language</h1>
+                    <p>This updates what you read on open.spotify.com</p>
+                    <span onClick={() => props.setLanguageWindowOpen(false)}>close</span>
+                </div>
+
+                <div className="languageOptions">
+                    <div onClick={() => swapLangAndClose("en")}><p>English</p><p className="nativeLang">English</p></div>
+                    <div onClick={() => swapLangAndClose("fr")}><p>French</p><p className="nativeLang">Français</p></div>
+                </div>
+
+
             </section>
         </div>
     )
