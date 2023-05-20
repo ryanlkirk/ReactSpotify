@@ -1,43 +1,13 @@
+import AlbumsContent from "./AlbumsContent";
+
 const InnerContent = () => {
-    return (<div>
-        <section className="focusSection">
-            <div className="albumCard">
-                <div className="album"></div>
-                <p>Peaceful Piano</p>
-                <p className="info">PeaceFul piano to help you slow down...</p>
-            </div>
-
-            <div className="albumCard">
-                <div className="album"></div>
-                <p>Peaceful Piano</p>
-                <p className="info">PeaceFul piano to help you slow down...</p>
-            </div>
-
-            <div className="albumCard">
-                <div className="album"></div>
-                <p>Peaceful Piano</p>
-                <p className="info">PeaceFul piano to help you slow down...</p>
-            </div>
-
-            <div className="albumCard">
-                <div className="album"></div>
-                <p>Peaceful Piano</p>
-                <p className="info">PeaceFul piano to help you slow down...</p>
-            </div>
-
-            <div className="albumCard">
-                <div className="album"></div>
-                <p>Peaceful Piano</p>
-                <p className="info">PeaceFul piano to help you slow down...</p>
-            </div>
-
-            <div className="albumCard">
-                <div className="album"></div>
-                <p>Peaceful Piano</p>
-                <p className="info">PeaceFul piano to help you slow down...</p>
-            </div>
+    return (
+        <section className="innerContent">
+            <AlbumsContent sectionName="Focus" numOfAlbums={8} />
+            <AlbumsContent sectionName="Spotify Playlists" numOfAlbums={8} />
         </section>
-    </div>)
+
+    )
 }
 
 export default InnerContent;

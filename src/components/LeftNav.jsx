@@ -56,7 +56,7 @@ const LeftNav = (props) => {
         </section>
         <section>
         
-            <div className='cookies'><a draggable="false" href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener" class="iAjWsvBt2sbhwc6DwEaW"><span>Cookies</span></a></div>
+            <div className='cookies'><a draggable="false" href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noreferrer"><span>Cookies</span></a></div>
             <button className='language-btn' onClick={() => props.setLanguageWindowOpen(true)}>
                 <img
                     draggable="false"

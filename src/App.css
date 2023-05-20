@@ -5,6 +5,8 @@ body,
   height: 100%;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  overflow: hidden;
 }
 
 a {
@@ -42,7 +44,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
+  height: 48px;
   padding: 0px 30px;
   background-color: white;
   color: #5e5e5e;
@@ -59,12 +61,13 @@ a {
 
 
 .leftNav {
-  width: 265px;
+  width: 235px;
   background: black;
   padding-top: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-shrink: 0;
 }
 
 .leftNav ul {
@@ -107,7 +110,7 @@ a {
   align-items: center;
   justify-content: space-between;
   background: #111111;
-  height: 34px;
+  height: 30px;
   padding: 16px 32px;
   flex: 1;
 }
@@ -149,7 +152,6 @@ main {
 .focusSection {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
 }
 
 .albumCard {
@@ -161,6 +163,7 @@ main {
   width: 150px;
   background: #161616;
   border-radius: 5px;
+  margin:0px 5px;
 }
 
 .albumCard p {
@@ -222,19 +225,30 @@ main {
 .languagePopover {
   height: 100%;
   width: 100%;
-  background: rgb(54, 54, 54);
+  background: rgba(54, 54, 54,0.5);
   position: absolute;
-  opacity: 0.5;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
 }
 
-.languagePicker{
+.languagePicker {
   width: 30%;
   height: 20%;
   min-width: 300px;
   background-color: #111111;
   border-radius: 10px;
+}
+
+.innerContent {
+  padding: 10px 32px;
+  box-sizing: border-box;
+}
+
+.albumSectionHeader {
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.4rem;
 }

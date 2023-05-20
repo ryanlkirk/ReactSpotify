@@ -27,7 +27,6 @@ const Main = () => {
                     </div>
 
                 </div>
-
                 <SpotifyPreviewBanner />
             </main>
         </>
