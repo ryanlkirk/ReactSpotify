@@ -1,4 +1,4 @@
-export default {
+const language = {
     Language : 'Français',
     Home: 'Accueil',
     Search: 'Rechercher',
@@ -16,3 +16,5 @@ export default {
     SelectLanguage: "Sélectionnez une langue",
     SpotifyLangView: "Cette action met à jour le texte que vous voyez sur open.spotify.com."
 }
+
+export default language;

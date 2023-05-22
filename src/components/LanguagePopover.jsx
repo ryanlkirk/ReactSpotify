@@ -1,18 +1,16 @@
 import { useEffect } from "react";
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { changeLangauge } from "../features/languageSlice";
 import GetLangText from '../app/helpers/language';
 
 const LanguagePopover = (props) => {
-    const lang = useSelector((state) => state.language)
     const dispatch = useDispatch();
 
-    //keypress handler for closing language picker
-    useEffect(() => {
+    useEffect((props) => {
         const handleEscKeyPress = (event) => {
             if (event.keyCode === 27) {
                 // Perform the desired action when Escape key is pressed
-                props.setLanguageWindowOpen(false)
+                props.setLanguageWindowOpen(false);
             }
         };
 
@@ -23,7 +21,8 @@ const LanguagePopover = (props) => {
         return () => {
             document.removeEventListener('keydown', handleEscKeyPress);
         };
-    }, []);
+    }, [props.setLanguageWindowOpen]);
+
 
     const swapLangAndClose = (lang) => {
         dispatch(changeLangauge(lang))

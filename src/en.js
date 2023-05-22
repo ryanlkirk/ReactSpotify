@@ -1,4 +1,4 @@
-export default {
+const language = {
     Language : 'English',
     Home: 'Home',
     Search: 'Search',
@@ -16,3 +16,5 @@ export default {
     SelectLanguage: "Choose a language",
     SpotifyLangView: "This updates what you read on open.spotify.com"
 }
+
+export default language;
