@@ -234,15 +234,12 @@ main {
 }
 
 .languagePicker {
-  width: 30%;
-  height: 25%;
-  min-width: 300px;
   background-color: #282828;
   border-radius: 10px;
 }
 
 .languagePickerHeader {
-  padding: 5px 15px;
+  padding: 10px 20px;
   border-bottom: 1px solid gray;
   margin-bottom: 20px;
 }
@@ -254,6 +251,7 @@ main {
 .languageOptions {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 10px;
 }
 
 .languageOptions div {
