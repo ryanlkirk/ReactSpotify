@@ -239,7 +239,8 @@ main {
 }
 
 .languagePickerHeader {
-  padding: 10px 20px;
+  display: flex;
+  padding: 0px 20px 10px 20px;
   border-bottom: 1px solid gray;
   margin-bottom: 20px;
 }
@@ -268,6 +269,17 @@ main {
 .languageOptions div p {
   margin: 0px;
 }
+
+.close-language {
+  background: #1b1b1b;
+  border-radius: 50%;
+  padding: 5px;
+  height: 16px;
+  width: 16px;
+  margin-top: 17px;
+  margin-left: 25px;
+}
+
 
 .nativeLang {
   padding-top: 5px;

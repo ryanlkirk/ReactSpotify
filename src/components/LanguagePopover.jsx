@@ -34,9 +34,20 @@ const LanguagePopover = (props) => {
         <div className="languagePopover">
             <section className="languagePicker">
                 <div className="languagePickerHeader">
-                    <h1>{GetLangText("SelectLanguage")}</h1>
-                    <p>{GetLangText("SpotifyLangView")}</p>
-                    <span onClick={() => props.setLanguageWindowOpen(false)}>{GetLangText("Close")}</span>
+                    <div>
+                        <h1>{GetLangText("SelectLanguage")}</h1>
+                        <p>{GetLangText("SpotifyLangView")}</p>
+                    </div>
+
+
+                    <div className='close-language' draggable="false" onClick={() => props.setLanguageWindowOpen(false)}>
+                        <img
+                            className='close-language-icon'
+                            draggable="false"
+                            src={require('../images/ui-elements/close.svg').default}
+                            alt={GetLangText("Close")}
+                        />
+                    </div>
                 </div>
 
                 <div className="languageOptions">
