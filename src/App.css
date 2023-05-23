@@ -232,6 +232,7 @@ main {
   align-items: center;
   justify-content: center;
   color: white;
+  z-index: 1;
 }
 
 .languagePicker {
@@ -307,10 +308,6 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-}
-
-.album {
-  position: relative;
 }
 
 .playBtn {
