@@ -197,6 +197,7 @@ main {
   background-image: url("../src/images/piano.jpg");
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
 }
 
 .cookies {
@@ -307,3 +308,30 @@ main {
   flex-direction: column;
   flex-grow: 1;
 }
+
+.album {
+  position: relative;
+}
+
+.playBtn {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  background: #1DB954;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0px; /* Initial position off-screen */
+  right: 5px;
+  transition:  0.2s ease-in-out; /* Transition property for smooth animation */
+}
+
+.albumCard:hover .playBtn {
+  opacity: 1;
+  bottom: 10px; /* Move to the desired position on hover */
+}
+
+
