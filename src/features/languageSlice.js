@@ -12,7 +12,7 @@ export const languageSlice = createSlice({
         if(validLang.indexOf(action.payload) >= 0){
             state.value = action.payload;
         } else {
-            // fallback to English incase of incorrect lang (probably a typo)
+            // fallback to English incase of incorrect lang
             state.value = "en"
         }
     },
