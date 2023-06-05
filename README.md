@@ -12,7 +12,6 @@ Please note that this project is currently under development, and not all featur
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Features
